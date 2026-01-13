@@ -7,6 +7,9 @@ const {
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 // ---- CONFIG ----
+const TOKEN = process.env.TOKEN;
+const clientId = process.env.client_id;
+const guildId = process.env.guild_id;
 
 // ---- COMMANDS ----
 const commands = [
@@ -285,5 +288,6 @@ http.createServer((req, res) => {
 
 
 client.login(process.env.TOKEN);
+
 
 
